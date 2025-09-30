@@ -178,6 +178,137 @@ body {
     }
 }
 
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .logo {
+        width: 400px;
+    }
+
+    .logo-text {
+        width: 400px;
+    }
+
+    .morph-box {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    @keyframes boxMorph {
+        0% {
+            opacity: 1;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            transform: translateY(10px) scale(1);
+        }
+        100% {
+            opacity: 1;
+            width: 350px;
+            height: 500px;
+            border-radius: 25px;
+            transform: translateY(10px) scale(1);
+        }
+    }
+
+    .social-buttons {
+        gap: 18px;
+        padding: 30px 20px;
+    }
+
+    .social-btn {
+        max-width: 300px;
+        height: 60px;
+        gap: 18px;
+        font-size: 18px;
+        padding: 0 25px 0 0;
+    }
+
+    .social-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 14px;
+    }
+
+    .footer-text {
+        bottom: 120px;
+        font-size: 14px;
+    }
+
+    @keyframes slideToTop {
+        0% {
+            transform: translateY(15px);
+        }
+        100% {
+            transform: translateY(-300px);
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 280px;
+    }
+
+    .logo-text {
+        width: 280px;
+    }
+
+    .morph-box {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    @keyframes boxMorph {
+        0% {
+            opacity: 1;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            transform: translateY(10px) scale(1);
+        }
+        100% {
+            opacity: 1;
+            width: 280px;
+            height: 420px;
+            border-radius: 20px;
+            transform: translateY(10px) scale(1);
+        }
+    }
+
+    .social-buttons {
+        gap: 15px;
+        padding: 25px 15px;
+    }
+
+    .social-btn {
+        max-width: 250px;
+        height: 50px;
+        gap: 12px;
+        font-size: 16px;
+        padding: 0 20px 0 0;
+    }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+    }
+
+    .footer-text {
+        bottom: 100px;
+        font-size: 12px;
+    }
+
+    @keyframes slideToTop {
+        0% {
+            transform: translateY(15px);
+        }
+        100% {
+            transform: translateY(-250px);
+        }
+    }
+}
+
 .social-btn:hover {
     background-color: #e8c9c3;
     transform: translateY(-3px) scale(1.02);

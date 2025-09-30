@@ -178,137 +178,6 @@ body {
     }
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .logo {
-        width: 400px;
-    }
-
-    .logo-text {
-        width: 400px;
-    }
-
-    .morph-box {
-        width: 80px !important;
-        height: 80px !important;
-    }
-
-    @keyframes boxMorph {
-        0% {
-            opacity: 1;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            transform: translateY(10px) scale(1);
-        }
-        100% {
-            opacity: 1;
-            width: 350px;
-            height: 500px;
-            border-radius: 25px;
-            transform: translateY(10px) scale(1);
-        }
-    }
-
-    .social-buttons {
-        gap: 18px;
-        padding: 30px 20px;
-    }
-
-    .social-btn {
-        max-width: 300px;
-        height: 55px;
-        gap: 15px;
-        font-size: 16px;
-        padding: 0 25px 0 0;
-    }
-
-    .social-icon {
-        width: 55px;
-        height: 55px;
-        border-radius: 13px;
-    }
-
-    .footer-text {
-        bottom: 120px;
-        font-size: 13px;
-    }
-
-    @keyframes slideToTop {
-        0% {
-            transform: translateY(15px);
-        }
-        100% {
-            transform: translateY(-300px);
-        }
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        width: 280px;
-    }
-
-    .logo-text {
-        width: 280px;
-    }
-
-    .morph-box {
-        width: 60px !important;
-        height: 60px !important;
-    }
-
-    @keyframes boxMorph {
-        0% {
-            opacity: 1;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            transform: translateY(10px) scale(1);
-        }
-        100% {
-            opacity: 1;
-            width: 280px;
-            height: 420px;
-            border-radius: 20px;
-            transform: translateY(10px) scale(1);
-        }
-    }
-
-    .social-buttons {
-        gap: 12px;
-        padding: 25px 15px;
-    }
-
-    .social-btn {
-        max-width: 240px;
-        height: 45px;
-        gap: 10px;
-        font-size: 14px;
-        padding: 0 15px 0 0;
-    }
-
-    .social-icon {
-        width: 45px;
-        height: 45px;
-        border-radius: 11px;
-    }
-
-    .footer-text {
-        bottom: 100px;
-        font-size: 11px;
-    }
-
-    @keyframes slideToTop {
-        0% {
-            transform: translateY(15px);
-        }
-        100% {
-            transform: translateY(-250px);
-        }
-    }
-}
-
 .social-btn:hover {
     background-color: #e8c9c3;
     transform: translateY(-3px) scale(1.02);
@@ -357,5 +226,210 @@ body {
     100% {
         opacity: 1;
         transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Logo ve Logo Text Boyutları */
+    .logo {
+        width: 80vw;
+        max-width: 400px;
+    }
+    
+    .logo-text {
+        width: 80vw;
+        max-width: 400px;
+    }
+    
+    /* Text Kayma Animasyonu - Daha az kayma */
+    @keyframes slideToTop {
+        0% {
+            transform: translateY(15px);
+        }
+        100% {
+            transform: translateY(-200px);
+        }
+    }
+    
+    /* Dikdörtgen Morph - Mobile Boyutları */
+    .morph-box {
+        width: 80px;
+        height: 80px;
+    }
+    
+    @keyframes boxMorph {
+        0% {
+            opacity: 1;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            transform: translateY(10px) scale(1);
+        }
+        100% {
+            opacity: 1;
+            width: 90vw;
+            max-width: 400px;
+            height: 500px;
+            border-radius: 25px;
+            transform: translateY(10px) scale(1);
+        }
+    }
+    
+    /* Butonlar Container */
+    .social-buttons {
+        gap: 18px;
+        padding: 30px 20px;
+    }
+    
+    /* Butonlar */
+    .social-btn {
+        gap: 18px;
+        max-width: 90%;
+        height: 65px;
+        padding: 0 25px 0 0;
+        border-radius: 16px;
+        font-size: 20px;
+    }
+    
+    /* Sosyal Medya İkonları */
+    .social-icon {
+        width: 65px;
+        height: 65px;
+        border-radius: 14px;
+    }
+    
+    /* Footer Text */
+    .footer-text {
+        bottom: 100px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Küçük Mobil Cihazlar */
+    .logo {
+        width: 85vw;
+        max-width: 300px;
+    }
+    
+    .logo-text {
+        width: 85vw;
+        max-width: 300px;
+    }
+    
+    /* Text daha az kayma */
+    @keyframes slideToTop {
+        0% {
+            transform: translateY(15px);
+        }
+        100% {
+            transform: translateY(-150px);
+        }
+    }
+    
+    /* Dikdörtgen daha küçük */
+    @keyframes boxMorph {
+        0% {
+            opacity: 1;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            transform: translateY(10px) scale(1);
+        }
+        100% {
+            opacity: 1;
+            width: 92vw;
+            max-width: 350px;
+            height: 450px;
+            border-radius: 20px;
+            transform: translateY(10px) scale(1);
+        }
+    }
+    
+    /* Butonlar daha küçük */
+    .social-buttons {
+        gap: 15px;
+        padding: 25px 15px;
+    }
+    
+    .social-btn {
+        gap: 15px;
+        height: 58px;
+        padding: 0 20px 0 0;
+        border-radius: 14px;
+        font-size: 18px;
+    }
+    
+    .social-icon {
+        width: 58px;
+        height: 58px;
+        border-radius: 12px;
+    }
+    
+    /* Footer */
+    .footer-text {
+        bottom: 80px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /* Çok Küçük Ekranlar (iPhone SE, vb.) */
+    .logo {
+        width: 90vw;
+    }
+    
+    .logo-text {
+        width: 90vw;
+    }
+    
+    @keyframes slideToTop {
+        0% {
+            transform: translateY(10px);
+        }
+        100% {
+            transform: translateY(-120px);
+        }
+    }
+    
+    @keyframes boxMorph {
+        0% {
+            opacity: 1;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transform: translateY(8px) scale(1);
+        }
+        100% {
+            opacity: 1;
+            width: 95vw;
+            height: 400px;
+            border-radius: 18px;
+            transform: translateY(8px) scale(1);
+        }
+    }
+    
+    .social-btn {
+        gap: 12px;
+        height: 52px;
+        padding: 0 15px 0 0;
+        font-size: 16px;
+    }
+    
+    .social-icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 11px;
+    }
+    
+    .social-buttons {
+        gap: 12px;
+        padding: 20px 12px;
+    }
+    
+    .footer-text {
+        bottom: 60px;
+        font-size: 13px;
     }
 }
